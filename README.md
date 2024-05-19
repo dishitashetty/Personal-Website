@@ -1,3 +1,3 @@
 # Personal-Website
-Personal website
-Languages: HTML, CSS, JavaScript
+Personal website\
+anguages: HTML, CSS, JavaScript
