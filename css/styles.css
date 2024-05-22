@@ -1,0 +1,262 @@
+/* -------------------------- Overall -------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+/* Page Cont */
+  .page-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+/* --------------------------Navigation Bar (on all pages) -------------------------- */
+
+  .navbar-cont { /* total bar */
+    min-height: 80px;
+    display: flex;
+    background-color: black;
+  }
+
+  .home-cont { /* home button cont */
+    flex: 1;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .links-cont { /* other 3 pages cont */
+    flex: 4 1 0;
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .pages-cont { /* each link */
+    align-self: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  .pages-cont:hover { /* underlines on hover */
+    text-decoration: underline;
+  }
+
+
+  /* -------------------------- Footer (on all pages) -------------------------- */
+
+  .footer-cont { /* total bar */
+    min-height: 80px;
+    display: flex;
+    border-top: 2px solid black;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+
+  .socials-cont { /* center with links */
+    align-self: center;
+    display: flex;
+    gap: 40px;
+  }
+
+  .contact-cont { /* center with links */
+    color: black;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    font-size: 20px;
+  }
+
+
+/* -------------------------- Landing Page Content -------------------------- */
+
+  .landing-content-cont {
+    flex: 1;
+    display: flex;
+    background-color: white;
+  }
+
+/* Words cont */
+  .intro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+    justify-content: center;
+  }
+
+  .intro-words {
+    margin: 10px;
+  }
+
+  .intro h1 {
+    font-size: 96px;
+    color: black;
+  }
+  
+  .intro p {
+    font-size: 36px;
+    color:#605e5a;
+  }
+  
+  
+  #about-button { /* animation on button*/
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    width: 116px;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  #about-button:hover {
+    color: white;
+    background-color: black;
+  }
+
+
+  /* Picture cont */
+  .intro-pic {
+    flex: 1;
+    display: flex;
+    padding: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* making picture a circle and adding gray thing*/
+  .intro-pic #intro-fade-pic{
+    border-radius: 100%;
+    filter: grayscale(100%);
+  }
+
+  .intro-pic #intro-fade-pic:hover{
+    filter: grayscale(0%);
+    transition: all .5s ease-in-out;
+  }
+ 
+/* -------------------------- About Page Content -------------------------- */
+
+  .about-content-cont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid green;
+  }
+
+  /* Intro cont */
+  .about-hero-cont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid purple;
+  }
+
+  .hero-words{
+    justify-self: center;
+    font-size: 18px;
+    border: 2px solid yellowgreen;
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+
+  .transition {
+    justify-self: center;
+    font-size: 18px;
+    border: 2px solid yellowgreen;
+    margin: 20px;
+  }
+
+  .transition-button { /* animation on button*/
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* each section cont */
+  .section-cont {
+    flex: 1;
+    display: flex;
+    background-color: white;
+    border: 2px solid blue;
+  }
+
+  /* Words cont */
+  .about-cont {
+    flex: 4 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+    padding: 20px;
+  }
+
+  .about-header {
+    font-size: 32px;
+    margin: 0;
+    border: 2px solid red;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .about-years {
+    font-size: 24px;
+    border: 2px solid blue;
+    font-weight: lighter;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .about-words {
+    font-size: 18px;
+    border: 2px solid red;
+    font-weight: lighter;
+    margin: 0px;
+  }
+
+
+  /* Picture cont */
+  .about-pic {
+    flex: 3 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+/* -------------------------- Favs Page Content -------------------------- */
+
+  .fav-content-cont {
+    flex: 6 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+
+/* -------------------------- Travel Page Content -------------------------- */
+
+  .travel-content-cont {
+    flex: 6 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+
